@@ -1,0 +1,379 @@
+*{ 
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    justify-content: space-between;
+    font-size: 20px;
+    text-decoration: none;
+    }
+  
+  body{
+    background:  rgb(221,226,106);
+    background: linear-gradient(0deg,  rgb(221,226,106) 0%, rgb(221,226,106) 100%);
+  }
+  
+  html{
+    scroll-behavior: smooth;
+  }
+  /* Nav bar */
+  
+  .header{
+    background-color: rgb(221,226,106);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 85px;
+    padding: 5px 10%;
+
+  } 
+  
+  .header .links .a{
+    padding:  0 20px;
+    text-decoration: none;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 700;
+    color: black;
+    transition: all 0.5s ease;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  .nav{
+    color:black;;
+  }
+ 
+  
+  /* Banner */
+  
+  
+  .slider{
+    width: 75%;
+    height: 450px;
+    overflow: hidden;
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius:  10px;
+  }
+  
+  .sli_img{
+     filter: brightness(0.5);
+  }
+  
+  .slider{
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.8);
+  }
+  
+  .slider .sli_img{
+    display: flex;
+    animation: cambio 25s infinite;
+    width: 400%;
+  }
+  
+    .slider .li_img{
+    width: 100%;
+    height: 100%;
+    list-style: none;
+  }
+  
+  .slider .slider_img{
+    width: 75%;
+    height: 75%;
+  }
+  
+  @keyframes cambio{
+    0%{margin-left: 0;}
+    20%{margin-left: 0;}
+  
+    25%{margin-left: -133.4%;}
+    45%{margin-left: -133.4%;}
+  
+    50%{margin-left: -266.6%;}
+    70%{margin-left: -266.6%;}
+  
+    75%{margin-left: 0;}
+    100%{margin-left: 0;}  
+  }
+  
+  /* Menu */
+  
+  .title_menu{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  
+  .menu .title_menu h1{
+    font-size: 50px;
+  }
+  
+  .menu .title_menu h2{
+    font-size: 50px;
+  }
+  
+  .cointeiner{
+    width: 100%;
+    display: flex;
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .card{
+    width: 90%;
+    margin: 20px;
+    border-radius: 6px;
+    overflow: hidden;
+    background-color: rgb(255,228,225);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+    cursor: default;
+    transition: all 400ms ease;
+  }
+  
+  .card:hover{
+    box-shadow: 7px 7px 23px rgba(0, 0, 0, 0.8);
+    transform: translateY(-3%);
+  }
+  
+  .card img{
+    width: 100%;
+    height: 210px;
+  }
+  
+  .card .contenido{
+    padding: 15px;
+    text-align: center;
+  }
+  
+  .card .contenido p{
+    line-height: 1.5;
+    color: black;
+  }
+  
+  .card .contenido h3{
+    font-weight: 400;
+    margin-bottom: 15px;
+  }
+  
+  .card .contenido a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    margin-top: 10px;
+    color: rgb(157,194,9);
+    border: 1px solid rgb(157,194,9);
+    border-radius: 4px;
+  }
+  
+  /* Pedidos */
+  
+  .pedido_titulo{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size:  50px;
+  }
+  
+  
+  .pedido_titulo  h2{
+    font-size:  50px;
+    margin-top:   50px;
+  }
+  
+  .form{
+    width: 80%;
+    min-width: 400px;
+    margin: auto;
+    padding: auto;
+    position: relative;
+    inset: 2px;
+    border-radius: 8px;
+    padding: 20px 20px;
+    display: flex;
+    flex-flow: wrap;
+    box-sizing: inherit;
+    background-color: rgb(255,228,225);
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 20px;
+  }
+  
+  .formu1{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 50%;
+    text-align: center;
+  }
+  
+  .formu1 p{
+    font-size: 1rem;
+    text-align: center;
+    color: black;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+  }
+  
+  .subtitulo{
+    font-size: 1.3rem;
+    color: black;
+    margin-bottom: 3vh;
+  }
+  
+  
+  .inputbox{
+    position: relative;
+  }
+  
+  .inputbox input{
+    width: 100%;
+    background: none;
+    border: none;
+    font-size: 1rem;
+    padding: .6em .3em;
+    outline: none;
+    border-bottom: 1px solid black;
+    margin-bottom: 1em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  .inputbox label{
+    color: black;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 5px;
+    transform: translateY(-12px) scale(0.7);
+    transform-origin: left top;
+  }
+  
+  .botones{
+    box-sizing: border-box;
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  
+  
+  .botones button{
+    background-color: rgb(239,187,204);
+    color: black;
+    font-weight: 500;
+    font-size: 1rem;
+    padding: .8em 0.5em;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+  }
+  
+  .botones button:hover{
+    padding: 5px 10px;
+    background: rgb(202,224,13);
+    color: white;
+    border-radius: 15px;
+  }
+  
+  .formu1 .saboresform input,
+  .formu1 .decoracionesform input{
+    display: none;
+  }
+  
+  .formu1 .saboresform label,
+  .formu1 .decoracionesform label{
+    font-size: 0.75;
+    padding: 5px 15px 5px 35px;
+    display: inline-block;
+    position: relative;
+    border-radius: 5px;
+    cursor: pointer;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+  
+  .formu1 .saboresform label:hover,
+  .formu1 .decoracionesform label:hover{
+    background-color: rgb(202,224,13);
+  }
+  
+  .formu1 .saboresform label::before,
+  .formu1 .decoracionesform label::before{
+    content: " ";
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    background: rgb(255,228,225);
+    border: 3px solid rgb(202,224,13);
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    border-radius: 5px;
+  }
+  
+  .formu1 .saboresform input:checked + label,
+  .formu1 .decoracionesform input:checked + label{
+    padding: 5px 15px;
+    background: rgb(202,224,13);
+    border-radius: 2px;
+    color: rgb(255,228,225);
+  }
+  
+  .formu1 .saboresform input:checked + label::before,
+  .formu1 .decoracionesform input:checked + label::before{
+    display: none;
+  }
+  
+  /* Footer */
+  
+  footer{
+    width: 100;
+    margin-top: 5px;
+    background-color:  rgb(221,226,106);
+    background-size: cover;
+    text-align: right;
+    text-decoration: none;
+  }
+  
+  
+  /* Pedidos admin*/
+  
+  #Pedidos{
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  #Pedidos h2{
+    font-size: 50px;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  #Pedidos .tabla_pedidos table{
+    position: relative; 
+    color: black;
+    table-layout: fixed;
+    border-collapse: collapse;
+    margin-top: 50px;
+    margin-left: 6rem;
+    background-color: rgb(221,226,106);   
+  }
+  
+  #Pedidos .tabla_pedidos thead{
+   background-color: mistyrose;
+  }
+  
+  #Pedidos .tabla_pedidos th{
+    padding: 10px 20px;
+    font-weight: 600;
+    transform: uppercase;
+  }
+  
+  #Pedidos .tabla_pedidos td{
+    padding: 10px 20px;
+    border-bottom: 1px solid mistyrose;
+    font-weight: 300;
+    transform: uppercase;
+  }
